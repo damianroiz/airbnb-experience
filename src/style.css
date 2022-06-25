@@ -47,11 +47,49 @@ section > p {
     color: #B6B6B4;
 }
 
-.card {
+.card-container {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.card {
+    width: 175px;
+    font-size: 12px;
+    display: flex;
+    flex: 0 0 auto;
     flex-direction: column;
+    justify-content: center;
+
 }
 
 .card > img {
-    width: 300px;
+    width: 100%;
+}
+
+.card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-self: start;
+    padding: 5px;
+}
+
+.card-stats {
+    display: flex;
+    align-self: center;
+    padding-block: 8px;
+}
+
+.star-icon {
+    height: 14px;
+}
+
+.card-price {
+    margin-top: auto;
+    align-self: start;
+    padding: 5px;
 }

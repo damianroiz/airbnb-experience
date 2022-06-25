@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
 import data from "./data.js"
+import './style.css'
 
 export default function App() {
     const cardContent =  data.map((item) => {
@@ -21,7 +22,10 @@ export default function App() {
         <div>
            <Navbar />
            <Hero />
-        {cardContent}
+           <section className="card-container">
+           {cardContent}
+           </section>
+        
         </div>
         
     )
