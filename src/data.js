@@ -12,7 +12,7 @@ export default [
             reviewCount: 6,
         },
         location: "Online",
-        openSports: 0,
+        openSpots: 0,
     },
     {
         id: 2,
@@ -24,8 +24,8 @@ export default [
             rating: 5.0,
             reviewCount: 30,
         },
-        location: "Canada",
-        openSports: 27,
+        location: "Online",
+        openSpots: 27,
     },
     {
         id: 3,
@@ -38,6 +38,6 @@ export default [
             reviewCount: 2,
         },
         location: "Norway",
-        openSports: 3,
+        openSpots: 3,
     }
 ]

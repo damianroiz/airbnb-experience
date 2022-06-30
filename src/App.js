@@ -8,13 +8,9 @@ import './style.css'
 export default function App() {
     const cardContent =  data.map((item) => {
         return (
-            <Card 
-                img={item.coverImg}
-                rating={item.status.rating}
-                reviewCount={item.status.reviewCount}
-                country={item.location}
-                title={item.title}
-                price={item.price}
+            <Card
+                key={item.id}
+                {...item}
             />
         )
     })
